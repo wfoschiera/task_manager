@@ -68,7 +68,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            Path(BASE_DIR,'frontend/build'),
+            Path(BASE_DIR, 'frontend/build'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -142,34 +142,10 @@ STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    Path(BASE_DIR,'frontend/build/static/'),
+    Path(BASE_DIR, 'frontend/build/static/'),
 ]
-
 
 CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:3000',
     'http://localhost:3000'
 ]
-
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-#
-# CLOUDINARY_ACCESS_KEY_ID = config('API_KEY')
-#
-# COLLECTFAST_ENABLED = False
-
-# # Storage configuration in
-# if CLOUDINARY_ACCESS_KEY_ID:
-#     CLOUDINARY_STORAGE = {  # pragma: no cover
-#         'CLOUD_NAME': config('CLOUD_NAME'),
-#         'API_KEY': config('API_KEY'),
-#         'API_SECRET': config('API_SECRET')
-#     }
-#     # static assets
-#     STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # pragma: no cover
-#     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'  # pragma: no cover
-#
-#     # Media assets
-#     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'  # pragma: no cover
-#     COLLECTFAST_ENABLED = True
-
