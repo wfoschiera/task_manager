@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+pytest = "*"
+pytest-cov = "*"
+python-decouple = "*"
+django-debug-toolbar = "*"
+pytest-django = "*"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-filter = "*"
+codecov = "*"
+dj-database-url = "*"
+responses = "*"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.8"
